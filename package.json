@@ -1,9 +1,12 @@
 {
+  "homepage": "https://darshil007.github.io/Random-Quote_app/",
   "name": "random-quote-app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "preDeploy" : "npm run build",
+    "deploy" : "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
