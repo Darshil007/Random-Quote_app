@@ -78,6 +78,7 @@ function App() {
         </div>
         <div id="author-text" className="w-[100%] flex justify-end me-10 p-3">
           <div
+            id="author"
             className={`author text-[22px] mb-2 font-madimi`}
             style={{ color: `${color}` }}
           >
@@ -88,19 +89,18 @@ function App() {
         <div className="w-[100%] flex justify-between p-3">
           <a
             id="tweet-quote"
-            href="https://twitter.com/?lang=en"
+            href="twitter.com/intent/tweet"
             className={`ms-10 text-[20px] font-madimi rounded-lg p-2 text-white`}
             style={{ backgroundColor: `${color}` }}
           >
             <FaTwitter />
           </a>
           <button
-            onClick={handleNextChange}
             id="new-quote"
+            onClick={handleNextChange}
             className={`text-white me-10 text-[16px] font-madimi rounded-lg px-2 py-1`}
             style={{ backgroundColor: `${color}` }}
-          >
-            New quote
+          >New quote
           </button>
         </div>
       </div>
